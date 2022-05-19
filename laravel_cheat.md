@@ -50,6 +50,10 @@ or
 
 > `php artisan make:model Flight -c`
 
-Shortcut to generate a model, migration, factory, seeder, policy, controller, and form requests...
+Generate a model, migration, factory, seeder, policy, controller, and form requests...
 
 > `php artisan make:model Flight --all`
+
+Generate a model, FlightController resource class, and form request classes
+
+> `php artisan make:model Flight --controller --resource --requests`
