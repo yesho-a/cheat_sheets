@@ -32,8 +32,20 @@ Then run the code below
 
 This will remove the image column from the posts table.
 
-**2. Make Model**
+**2. Generate Model**
+
+Generate a model Post
 
 > `php artisan make:model Post`
 
-Creates a model Post
+Generate a Post model with migration
+
+> `php artisan make:model Post --migration`
+
+Generate a Post model with controller
+
+> `php artisan make:model Flight --controller`
+
+or
+
+> `php artisan make:model Flight -c`
