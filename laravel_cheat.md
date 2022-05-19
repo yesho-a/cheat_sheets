@@ -49,3 +49,7 @@ Generate a Post model with controller
 or
 
 > `php artisan make:model Flight -c`
+
+Shortcut to generate a model, migration, factory, seeder, policy, controller, and form requests...
+
+> `php artisan make:model Flight --all`
