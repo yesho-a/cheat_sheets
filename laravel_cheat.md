@@ -1,6 +1,6 @@
 # Laravel Cheat Sheet
 
-**Make migration**
+**1. Make migration**
 
 > `php artisan make:migration create_post_table--table=post`.
 
@@ -12,13 +12,21 @@ The above creates a migration for a database table named post.
 
 Creates a migration to add column named image to the posts table.
 
-**Create Migration to Delete Column from Table**
+**Delete Column from Table**
+
+_Option 1 : Create a migration to delete column_
 
 > `php artisan make:migration delete_image_from_posts_table --table=posts`
 
 Creates a migration to delete a column named image from the posts table.
 
-**Make Model**
+_Option 2 : Use down() function in migration.php_
+
+Add the column to be deleted inside the down function as shown below.
+
+> `Schema::table('posts', function (Blueprint $table) { $table->string('image'); });`
+
+**2. Make Model**
 
 > `php artisan make:model Post`
 
