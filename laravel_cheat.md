@@ -26,6 +26,12 @@ Add the column to be deleted inside the down function as shown below.
 
 > `Schema::table('posts', function (Blueprint $table) { $table->string('image'); });`
 
+Then run the code below
+
+> ` php artisan migrate:rollback`
+
+This will remove the image column from the posts table.
+
 **2. Make Model**
 
 > `php artisan make:model Post`
