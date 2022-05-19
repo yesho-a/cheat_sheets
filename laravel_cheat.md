@@ -19,3 +19,7 @@ Creates a migration to add column named image to the posts table.
 Creates a migration to delete a column named image from the posts table.
 
 **Make Model**
+
+> `php artisan make:model Post`
+
+Creates a model Post
